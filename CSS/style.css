@@ -5,32 +5,63 @@ h1 {
   color: white;
   background-color: black;
   text-align: center;
+  margin: 10px 20px 0px 20px;
+  border: 2px solid white;
+  padding: 10px 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 body {
-  background-color: black;
+background-color: lightblue;
+margin: 0px;
 }
 ul{
   display: flex;
-  border: 1px solid black;
-  background-color: black;
   width: auto;
-  justify-content: space-around;
-  list-style: none;
-  margin: 0px;
+  margin: 0px 20px;
+  padding: 0px;
 }
 .enlace{
   text-decoration: none;
   color: white;
 }
-.menu li a:hover {
-  color: red;
-  font-weight: bold;
+.menu li {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.menu li:hover {
+  background-color: red;
 }
 aside{
   display: flex;
   width: auto;
   padding: 20px;
   flex-direction: column;
+}
+aside button{
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+aside button:hover {
+  background-color: red;
 }
 .contenedor-tarjetas {
   display: flex;
@@ -44,7 +75,7 @@ aside{
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
-  background-color: lightblue;
+  background-color: #B0BEC5; 
   text-align: left;
   padding: 15px;
   margin: 10px;
@@ -72,9 +103,15 @@ aside{
 }
 footer{
   color: white;
+  width: auto;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #B0BEC5;
 }
-.grid{
-  display: grid;
-  grid-template-areas:
-  "aside main";
+@media only screen and (min-width: 600px) {
+  .grid{
+    display: grid;
+    grid-template-areas:
+    "aside main";
+  }
 }

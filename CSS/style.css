@@ -8,8 +8,6 @@ h1 {
   margin: 10px 20px 0px 20px;
   border: 2px solid white;
   padding: 10px 0px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
 }
 body {
 background-color: lightblue;
@@ -26,20 +24,23 @@ ul{
   color: white;
 }
 .menu li {
+  width: 100%;
+  padding: 0px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+.menu li button{
   background-color: black;
   border: 2px solid white;
   color: white;
   width: 100%;
+  margin: 0px;
   padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   cursor: pointer;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
 }
-.menu li:hover {
+.menu li button:hover {
   background-color: red;
 }
 aside{

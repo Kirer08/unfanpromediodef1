@@ -109,7 +109,7 @@ footer{
   border-radius: 8px;
   background-color: #B0BEC5;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1150px) {
   .grid{
     display: grid;
     grid-template-areas:

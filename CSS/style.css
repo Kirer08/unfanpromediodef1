@@ -106,7 +106,6 @@ footer{
   color: white;
   width: auto;
   padding: 5px;
-  border-radius: 8px;
   background-color: #B0BEC5;
 }
 @media only screen and (min-width: 1150px) {
@@ -115,4 +114,23 @@ footer{
     grid-template-areas:
     "aside main";
   }
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.news {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.metadata {
+  color: #666;
+  font-size: 14px;
+}
+.content {
+  color: #444;
+  line-height: 1.6;
 }

@@ -88,6 +88,7 @@ aside button:hover {
 .tarjeta img {
   width: 100%;
   height: auto;
+  border-radius: 4px;
 }
 .tarjeta button {
   margin-top: 10px;
@@ -104,8 +105,8 @@ aside button:hover {
 }
 footer{
   color: white;
-  width: auto;
-  padding: 5px;
+  width: 100%;
+  padding: 10px;
   background-color: #B0BEC5;
 }
 @media only screen and (min-width: 1150px) {

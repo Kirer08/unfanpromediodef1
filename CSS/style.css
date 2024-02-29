@@ -90,6 +90,9 @@ aside button:hover {
   height: auto;
   border-radius: 4px;
 }
+.tarjeta iframe{
+  width: 100%;
+}
 .tarjeta button {
   margin-top: 10px;
   padding: 10px;

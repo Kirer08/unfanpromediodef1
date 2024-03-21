@@ -138,8 +138,11 @@ footer{
   color: #444;
   line-height: 1.6;
 }
-.grid1{
-  display: grid;
-  grid-template-areas:
-  "img img";
+.mid{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.mid1{
+  width: 50%;
 }

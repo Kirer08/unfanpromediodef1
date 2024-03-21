@@ -138,3 +138,8 @@ footer{
   color: #444;
   line-height: 1.6;
 }
+.grid1{
+  display: grid;
+  grid-template-areas:
+  "img img";
+}

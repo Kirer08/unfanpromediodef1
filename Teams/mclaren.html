@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-Es">
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href=".././CSS/style.css">
     <link rel="icon" href=".././Images/logo_f1.jpg" type="image" sizes="16x16">
 </head>
@@ -31,18 +32,22 @@
             <a href="./sauber.html"><button>Stake F1 Team Kick Sauber</button></a>
             <a href="./haas.html"><button>MoneyGram Haas F1 Team</button></a>
         </aside>
-        <main class="contenedor-tarjetas">
-            <article class="tarjeta">
-                <h2>McLAren F1 Team</h2>
-                <p>Pilotos
-                <br>Lando Norris
-                <br>Oscar Piastri
-                <br>Team Principal
-                <br>Andrea Stella
-                <br>Coche: MCL38</p>
-                <img src="../Images/Coches/MCL38.jpeg"/>
-            </article>
-        </main>
+        <div class="container">
+            <div class="news">
+                <h2 class="title">McLaren Formula 1 Team</h2>
+                <p class="metadata">Autor: Un fan promedio de F1</p>
+                <div class="mid" id="imagen1">
+                    <p class="content">Pilotos: Lando Norris y Oscar Piastri
+                    <br>Team Principal: Andrea Stella
+                    <br>Coche: MCL39
+                    <br>Sede: Woking, Reino Unido
+                    <br>Campeonatos de constructores: 8
+                    <br>Campeonatos de pilotos: 12</p>
+                    <img class="mid1" src="../Images/Coches/MCL38.jpeg" alt="Imagen" onclick="ampliarImagen('imagen1')"/>
+                    <script src="script.js"></script>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Metodos de contacto al autor: Juan Enrique del Rio Ferrer</p>

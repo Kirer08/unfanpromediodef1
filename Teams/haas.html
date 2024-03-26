@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es-Es">
 <head>
+    <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href=".././CSS/style.css">
     <link rel="icon" href=".././Images/logo_f1.jpg" type="image" sizes="16x16">
 </head>
@@ -31,18 +32,22 @@
             <a href="./sauber.html"><button>Stake F1 Team Kick Sauber</button></a>
             <a href="./haas.html"><button>MoneyGram Haas F1 Team</button></a>
         </aside>
-        <main class="contenedor-tarjetas">
-            <article class="tarjeta">
-                <h2>MoneyGram Haas F1 Team</h2>
-                <p>Pilotos
-                <br>Kevin Magnusen
-                <br>Sergio "Checo" Perez
-                <br>Team Principal
-                <br>Ayao Komatsu
-                <br>Coche: VF-24</p>
-                <img src="../Images/Coches/VF-24.jpeg"/>
-            </article>
-        </main>
+        <div class="container">
+            <div class="news">
+                <h2 class="title">MoneyGram Haas F1 Team</h2>
+                <p class="metadata">Autor: Un fan promedio de F1</p>
+                <div class="mid" id="imagen1">
+                    <p class="content">Pilotos: Kevin Magnusen y Niko Hulkenberg
+                    <br>Team Principal: Ayao Komatsu
+                    <br>Coche: VF-24
+                    <br>Sede: Kannapolis, NC, Estados Unidos / Banbury, Reino Unido
+                    <br>Campeonatos de constructores: 0
+                    <br>Campeonatos de pilotos: 0</p>
+                    <img class="mid1" src="../Images/Coches/VF-24.jpeg" alt="Imagen" onclick="ampliarImagen('imagen1')"/>
+                    <script src="script.js"></script>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Metodos de contacto al autor: Juan Enrique del Rio Ferrer</p>

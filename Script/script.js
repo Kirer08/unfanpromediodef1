@@ -1,8 +1,8 @@
-// script.js
-function ampliarImagen(imagen) {
-    if (imagen.className == "ampliada") {
-        imagen.className = "mid1";
+function ampliarImagen(id) {
+    var imagen = document.getElementById(id);
+    if (imagen.className.includes("ampliada")) {
+        imagen.classList.remove("ampliada");
     } else {
-        imagen.className = "ampliada";
+        imagen.classList.add("ampliada");
     }
 }

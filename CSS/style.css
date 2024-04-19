@@ -81,6 +81,9 @@ aside button:hover {
   padding: 15px;
   margin: 10px;
   align-self: center;
+  color: #444;
+  line-height: 1.6;
+  font-family: 'Cambria';
 }
 .tarjeta:hover {
   transform: translateY(-5px);
@@ -137,6 +140,7 @@ footer{
 .content {
   color: #444;
   line-height: 1.6;
+  font-family: 'Cambria';
 }
 .mid{
   display: flex;

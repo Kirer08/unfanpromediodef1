@@ -81,8 +81,10 @@ aside button:hover {
   padding: 15px;
   margin: 10px;
   align-self: center;
-  color: #444;
   font-family: 'Cambria';
+}
+.tarjeta p{
+  color: #444;
 }
 .tarjeta:hover {
   transform: translateY(-5px);

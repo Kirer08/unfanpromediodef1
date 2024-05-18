@@ -154,6 +154,11 @@ footer{
   cursor: pointer;
   transition: transform 0.3s;
 }
+.mid2{
+  width: 30%;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
 .ampliada{
   position: fixed;
   top: 0;

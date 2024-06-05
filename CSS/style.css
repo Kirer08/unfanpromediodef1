@@ -73,7 +73,8 @@ aside button:hover {
 }
 .contenedor-tarjetas-live {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 20px;
 }

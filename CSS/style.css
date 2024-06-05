@@ -86,7 +86,6 @@ aside button:hover {
   padding: 0px;
 }
 .tarjeta-live {
-  width: 400px;
   background-color: black;
   text-align: left;
   padding: 15px;
@@ -107,6 +106,9 @@ aside button:hover {
 }
 .tarjeta-live button:hover {
   background-color: red;
+}
+iframe{
+  width: 100%;
 }
 .tarjeta {
   width: 300px;
@@ -149,10 +151,18 @@ aside button:hover {
   background-color: red;
 }
 @media only screen and (min-width: 1150px) {
+  .tarjeta-live {
+    width: 400;
+  }
   .grid{
     display: grid;
     grid-template-areas:
     "aside main";
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .tarjeta-live {
+    width: 90%;
   }
 }
 .container {

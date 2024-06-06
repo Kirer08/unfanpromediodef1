@@ -84,6 +84,7 @@ aside button:hover {
   padding: 0px;
 }
 .tarjeta-live {
+  color: white;
   background-color: black;
   text-align: left;
   padding: 15px;
@@ -154,6 +155,7 @@ iframe{
   }
   .tarjeta-live {
     width: 400;
+    margin: 10px;
   }
   .grid{
     display: grid;

@@ -192,6 +192,9 @@ iframe{
   line-height: 1.6;
   font-family: 'Cambria';
 }
+img{
+  width: 100%;
+}
 .mid{
   display: flex;
   justify-content: space-around;

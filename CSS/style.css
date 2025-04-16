@@ -20,7 +20,7 @@ h1 {
   flex-direction: column;
   min-height: 100vh;
 }
-ul{
+ul.menu {
   display: flex;
   width: auto;
   margin: 0px 20px;
@@ -52,9 +52,21 @@ ul{
 }
 aside{
   display: flex;
-  width: auto;
+  width: 300px;
   padding: 20px;
   flex-direction: column;
+}
+aside details summary {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
 }
 aside button{
   background-color: black;
@@ -68,7 +80,8 @@ aside button{
   font-size: 16px;
   cursor: pointer;
 }
-aside button:hover {
+aside button:hover,
+aside details summary:hover {
   background-color: red;
 }
 .contenedor-tarjetas-live {
@@ -154,7 +167,7 @@ iframe{
     justify-content: space-around;
   }
   .tarjeta-live {
-    width: 400;
+    width: 400px;
     margin: 10px;
   }
   .grid{

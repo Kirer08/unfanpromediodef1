@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+    <link rel="icon" href="./Images/logo_f1.jpg" type="image" sizes="16x16">
+    <title>Un fan promedio</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Formula 1 y MotoGP</h1>
+            <nav class="menu">
+                <ul class="menu">
+                    <li><a class="enlace" href="./index.html"><button>Inicio</button></a></li>
+                    <li><a class="enlace" href="./curiosidades.html"><button>Curiosidades</button></a></li>
+                    <li><a class="enlace" href="./circuitos.html"><button>Circuitos F1</button></a></li>
+                    <li><a class="enlace" href="./circuitos2.html"><button>Circuitos MotoGP</button></a></li>
+                    <li><a class="enlace" href="./contacto.html"><button>Contacto</button></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="grid">
+            <aside>
+                <details>
+                    <summary><strong>Teams F1</strong></summary>
+                    <nav>
+                        <a href="https://www.formula1.com/en/teams" target="_blank"><button>Teams F1</button></a>
+                        <a href="https://www.fiaformula2.com/Teams-and-Drivers" target="_blank"><button>Teams F2</button></a>
+                        <a href="https://www.fiaformula3.com/Teams-and-Drivers" target="_blank"><button>Teams F3</button></a>
+                    </nav>
+                </details>
+                <details>
+                    <summary><strong>Teams MotoGP</strong></summary>
+                    <nav>
+                        <a href="https://www.motogp.com/es/teams/motogp" target="_blank"><button>Teams MotoGP</button></a>
+                        <a href="https://www.motogp.com/es/teams/moto2" target="_blank"><button>Teams Moto2</button></a>
+                        <a href="https://www.motogp.com/es/teams/moto3" target="_blank"><button>Teams Moto3</button></a>
+                    </nav>
+                </details>
+                <details>
+                    <summary><strong>Teams WorldSBK</strong></summary>
+                    <nav>
+                        <a href="https://www.worldsbk.com/en/teams/sbk" target="_blank"><button>Teams WorldSBK</button></a>
+                        <a href="https://www.worldsbk.com/en/teams/ssp" target="_blank"><button>Teams Supersport</button></a>
+                        <a href="https://www.worldsbk.com/en/teams/ssp300" target="_blank"><button>Teams Supersport 300</button></a>
+                        <a href="https://www.worldsbk.com/en/teams/wcr" target="_blank"><button>Teams WorldWCR</button></a>
+                    </nav>
+                </details>
+            </aside>
+            <section class="contenedor-tarjetas">
+                <article class="tarjeta">
+                    <h2>Test de Bahrein</h2>
+                    <img src="./Images/Circuitos/F1_Schedule/F1 Schedule_page-0001.jpg"/>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>
+                Metodos de contacto al autor: Un fan promedio<br>
+                Redes Sociales:<br>
+                Twitter: <a href="https://twitter.com/fanpromediof1"target="_blank">https://twitter.com/fanpromediof1</a><br>
+                Correo electrónico: <a href="mailto:fanpromediof1@gmail.com">fanpromediof1@gmail.com</a><br>
+            </p>
+        </footer>
+    </div>
+    <script>
+        // Evita que el navegador recuerde la posición anterior
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      
+        // Forzar scroll arriba varias veces por seguridad
+        const scrollToTop = () => {
+          window.scrollTo(0, 0);
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        };
+      
+        // Al cargar
+        window.addEventListener('load', () => {
+          setTimeout(scrollToTop, 100); // un poco más de tiempo por los iframes
+          setTimeout(scrollToTop, 500); // segundo intento
+          setTimeout(scrollToTop, 1000); // por si acaso
+        });
+      
+        // Al volver a la página desde el historial
+        window.addEventListener('pageshow', (event) => {
+          if (event.persisted) {
+            scrollToTop();
+          }
+        });
+    </script>
+</body>
+</html> 

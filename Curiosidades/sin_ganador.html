@@ -12,7 +12,6 @@
             <nav class="menu">
                 <ul class="menu">
                     <li><a class="enlace" href="./../index.html"><button>Inicio</button></a></li>
-                    <li><a class="enlace" href="./../curiosidades.html"><button>Curiosidades</button></a></li>
                     <li><a class="enlace" href="./../circuitos.html"><button>Circuitos F1</button></a></li>
                     <li><a class="enlace" href="./../circuitos2.html"><button>Circuitos MotoGP</button></a></li>
                     <li><a class="enlace" href="./../contacto.html"><button>Contacto</button></a></li>
@@ -66,5 +65,32 @@
             </p>
         </footer>
     </div>
+    <script>
+        // Evita que el navegador recuerde la posición anterior
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      
+        // Forzar scroll arriba varias veces por seguridad
+        const scrollToTop = () => {
+          window.scrollTo(0, 0);
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        };
+      
+        // Al cargar
+        window.addEventListener('load', () => {
+          setTimeout(scrollToTop, 100); // un poco más de tiempo por los iframes
+          setTimeout(scrollToTop, 500); // segundo intento
+          setTimeout(scrollToTop, 1000); // por si acaso
+        });
+      
+        // Al volver a la página desde el historial
+        window.addEventListener('pageshow', (event) => {
+          if (event.persisted) {
+            scrollToTop();
+          }
+        });
+    </script>
 </body>
 </html> 

@@ -13,7 +13,6 @@
             <nav class="menu">
                 <ul class="menu">
                     <li><a class="enlace" href="./index.html"><button>Inicio</button></a></li>
-                    <li><a class="enlace" href="./curiosidades.html"><button>Curiosidades</button></a></li>
                     <li><a class="enlace" href="./circuitos.html"><button>Circuitos F1</button></a></li>
                     <li><a class="enlace" href="./circuitos2.html"><button>Circuitos MotoGP</button></a></li>
                     <li><a class="enlace" href="./contacto.html"><button>Contacto</button></a></li>
@@ -22,6 +21,19 @@
         </header>
         <main class="grid">
             <aside>
+                <details>
+                    <summary><strong>Live Timings</strong></summary>
+                    <nav>
+                        <a href="https://f1-dash.com/dashboard" target="_blank"><button>Formula 1 (Opc 1)</button></a>
+                        <a href="https://livetimingnews.es/livetiming" target="_blank"><button>Formula 1 (Opc 2)</button></a>
+                        <a href="https://www.fiaformula2.com/livetiming/index.html" target="_blank"><button>Formula 2</button></a>
+                        <a href="https://www.fiaformula3.com/livetiming/index.html" target="_blank"><button>Formula 3</button></a>
+                        <a href="https://www.f1academy.com/livetiming/index.html" target="_blank"><button>F1: Academy</button></a>
+                        <a href="https://mgp1official.com/live/" target="_blank"><button>MotoGP (Opc 1)</button></a>
+                        <a href="https://mototiming.live/" target="_blank"><button>MotoGP (Opc 2)</button></a>
+                        <a href="https://livetimingworldsbk.azurewebsites.net/LiveTimingExternal/DornaWeb" target="_blank"><button>WorldSBK</button></a>
+                    </nav>
+                </details>
                 <details>
                     <summary><strong>Teams F1</strong></summary>
                     <nav>
@@ -160,4 +172,31 @@
             </p>
         </footer>
     </div>
+    <script>
+        // Evita que el navegador recuerde la posición anterior
+        if ('scrollRestoration' in history) {
+          history.scrollRestoration = 'manual';
+        }
+      
+        // Forzar scroll arriba varias veces por seguridad
+        const scrollToTop = () => {
+          window.scrollTo(0, 0);
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        };
+      
+        // Al cargar
+        window.addEventListener('load', () => {
+          setTimeout(scrollToTop, 100); // un poco más de tiempo por los iframes
+          setTimeout(scrollToTop, 500); // segundo intento
+          setTimeout(scrollToTop, 1000); // por si acaso
+        });
+      
+        // Al volver a la página desde el historial
+        window.addEventListener('pageshow', (event) => {
+          if (event.persisted) {
+            scrollToTop();
+          }
+        });
+    </script>
 </body>
